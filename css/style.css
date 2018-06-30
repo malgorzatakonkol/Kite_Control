@@ -200,3 +200,35 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+
+/*icony z fontawesome*/
+
+.icon-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 40px auto;
+}
+
+.icon {
+    display: block;
+    width: 200px;
+    text-align: center;
+    -webkit-box-shadow: 4px 4px 24px 1px rgba(102,184,196,0.75);
+    -moz-box-shadow: 4px 4px 24px 1px rgba(102,184,196,0.75);
+    box-shadow: 4px 4px 24px 1px rgba(102,184,196,0.75);
+}
+
+.icon i {
+    font-size: 50px;
+    color: #e00986;
+    padding: 15px;
+}
+
+.icon p {
+    font-size: 30px;
+}
+
+.icon span {
+    font-size: 18px;
+}
