@@ -82,6 +82,8 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     z-index: 1;
 }
 
+/*stylowanie hero-section*/
+
 .hero-section {
     background-image: url("../assets/6.jpg");
     background-size: cover;
@@ -114,4 +116,35 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
 .yellow-text {
     font-size: 40px;
     color: #fbb619!important;
+}
+
+/*stylowanie sekcji z artykułem*/
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about-section {
+    width: 100%;
+    background-color: #f29cd9;
+}
+
+.about-section h2 {
+    margin: 0;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.about-section img {
+    width: 50px;
+    height: 50px;
+    margin: 10px auto 30px;
+    display: block;
+    background-color: #f29cd9;
+}
+
+.about-section p {
+    text-align: justify;
 }
