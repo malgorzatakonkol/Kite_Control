@@ -27,10 +27,57 @@ header {
     float: left;
 }
 
-.menu-section ul {
-    float: right;
-}
-
 .clear {
     clear: both;
+}
+
+/*stylowanie menu*/
+
+nav ul {
+    float: right;
+    list-style-type: none; /*lista bez dekoracji*/
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block; /*li obok siebie*/
+    position: relative;
+    width: 150px;
+}
+
+nav ul li a {
+    text-decoration: none; /*linki bez dekoracji*/
+    color: #e00986;
+    line-height: 80px;
+    padding: 0 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    transition-duration: 2s; /*delikatne przejście*/
+}
+
+nav ul ul { /*wszystkie ul które znajdują się w nav i ul*/
+    background-image: radial-gradient(circle, #bcb2fe, #f29cd9);
+    text-align: left;
+    width: 100%;
+    border: 1px solid #e00986;
+    display: none; /*ukrycie drugiego menu*/
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul ul li a {
+    padding: 0 15px;
+}
+
+nav ul li:hover > ul { /*odkrycie drugiego menu*/
+    display: block;
+    position: absolute;
+    z-index: 1;
 }
