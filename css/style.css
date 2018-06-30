@@ -184,3 +184,19 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
 .gallery-image img:hover{
     transform: scale(1.15);
 }
+
+/*stylowanie sekcji z filmem*/
+
+.movie-section {
+    position: relative;
+    height: 400px;
+    background-color: #66b8c4;
+}
+
+.single-movie {
+    position: absolute;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
