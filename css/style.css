@@ -118,6 +118,32 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     color: #fbb619!important;
 }
 
+/*stylowanie stick slider*/
+
+.slider-section {
+    background-image: radial-gradient(circle, #72d6c9, #54d1ed, #7ac5ff, #bcb2fe, #f29cd9);
+    overflow: hidden;
+}
+
+.slider-section img {
+    object-fit: cover;
+}
+
+.slick-slider {
+    margin: 0 auto;
+    padding: 40px 60px;
+}
+
+.slick-slider img {
+    max-width: 100%;
+    max-height: 100%;
+    width: 300px;
+    height: 200px;
+}
+
+.slick-dots {
+    bottom: 0;
+}
 /*stylowanie sekcji z artykułem*/
 
 .container {
