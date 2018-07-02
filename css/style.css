@@ -316,3 +316,35 @@ footer {
     text-align: center;
     padding: 10px;
 }
+
+/*responsywność*/
+
+@media (max-width: 767px) {
+    header {
+        height: 250px;
+    }
+    .nav-logo { /*logo na środku*/
+        width: 100%;
+        float: none;
+        padding: 0;
+        text-align: center;
+    }
+    nav ul {
+        float: none;
+        background-image: radial-gradient(circle, #72d6c9, #54d1ed,
+        #7ac5ff, #bcb2fe, #f29cd9);
+    }
+    nav ul li {
+        display: block;
+        margin: 0 auto;
+    }
+    nav ul li:hover > ul {
+        display: none;
+    }
+    .movie-section {
+        display: none;
+    }
+    .contact-section {
+        display: none;
+    }
+}
