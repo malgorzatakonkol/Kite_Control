@@ -16,17 +16,17 @@
     <nav class="menu-section">
         <h1 class="nav-logo">Kite Control</h1>
         <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Places</a>
+            <li><a href="#about-section">About Us</a></li>
+            <li><a href="#gallery-section">Places</a>
                 <ul>
-                    <li><a href="#">Rewa</a></li>
-                    <li><a href="#">Hawaii</a></li>
-                    <li><a href="#">Turks and Caicos Islands</a></li>
-                    <li><a href="#">Fiji</a></li>
-                    <li><a href="#">Cape Town</a></li>
+                    <li><a href="#gallery-section">Rewa</a></li>
+                    <li><a href="#gallery-section">Hawaii</a></li>
+                    <li><a href="#gallery-section">Fiji</a></li>
+                    <li><a href="#gallery-section">Cape Town</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#movie-section">Followers</a></li>
+            <li><a href="#contact-section">Contact</a></li>
         </ul>
     </nav>
     <div class="clear"></div>
@@ -35,7 +35,13 @@
 <section class="hero-section">
     <div class="slogan">
         <h2>First, <span>think</span>. Second, <span>believe</span>. Third, <span>dream</span>.</h2>
-        <h2>And finally, <span class="yellow-text">dare!</span></h2>
+        <h2>
+            And finally,
+            <span class="benefits-keyword">
+            <span class="yellow-text">dare!</span>
+            <span class="yellow-textt">share!</span>
+            </span>
+        </h2>
     </div>
 </section>
 <section class="slider-section">
@@ -49,7 +55,7 @@
     </div>
 </section>
 <section>
-    <article class="about-section">
+    <article id="about-section">
         <div class="container">
             <h2>We &#9825 kitesurfing, and you?</h2>
             <!--<img src="assets/kite.jpg" alt="kite">-->
@@ -91,18 +97,18 @@
 
     </article>
 </section>
-<section class="gallery-section">
+<section id="gallery-section">
     <div class="container">
         <h2 class="gallery-text">Gallery</h2>
         <figure class="gallery-image">
-            <img src="assets/1.jpg" alt="Photo 1">
-            <img src="assets/2.jpg" alt="Photo 2">
-            <img src="assets/3.jpg" alt="Photo 3">
-            <img src="assets/4.jpg" alt="Photo 4">
+            <img src="assets/rewa.jpg" alt="Photo 1">
+            <img src="assets/hawaii.jpg" alt="Photo 2">
+            <img src="assets/fiji.jpg" alt="Photo 3">
+            <img src="assets/capeTown.jpeg" alt="Photo 4">
         </figure>
     </div>
 </section>
-<section class="movie-section">
+<section id="movie-section">
     <div class="single-movie">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/jOSsb2GgcoU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
@@ -125,7 +131,7 @@
     </div>
 </section>
 
-<section class="contact-section container">
+<section id="contact-section" class="container">
     <form action="php/form.php" method="post">
         <label for="name">Name</label>
         <input type="text" name="name" id="name" required>

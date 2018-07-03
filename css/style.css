@@ -116,9 +116,27 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     color: #e00986;
 }
 
+.benefits-keyword {
+    /*display: block;*/
+    vertical-align: top;
+    position: relative;
+}
+
 .yellow-text {
+    /*display: block;*/
+    /*-webkit-transition: webkit transform 1s opacity 1s;*/
+    transition: 1s opacity 1s;
     font-size: 40px;
     color: #fbb619!important;
+}
+
+.yellow-textt {
+    transform: translateY(100px);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: 1s opacity 1s;
 }
 
 /*stylowanie stick slider*/
@@ -155,12 +173,12 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     padding: 10px 20px;
 }
 
-.about-section {
+#about-section {
     width: 100%;
     background-color: #f29cd9;
 }
 
-.about-section h2 {
+#about-section h2 {
     margin: 0;
     padding: 20px;
     font-size: 30px;
@@ -189,7 +207,7 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     position: absolute;
     margin-top: -66px;
     margin-left: 18px;
-    color: black;
+    color: rgba(0, 0, 0, 0.6);
     font-size: 15px;
     z-index: 2;
 }
@@ -208,18 +226,18 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     opacity: 0.6;
 }
 
-.about-section p {
+#about-section p {
     text-align: justify;
 }
 
 /* stylowanie galerii*/
 
-.gallery-section {
+#gallery-section {
     width: 100%;
     margin: 0 auto;
 }
 
-.gallery-section h2 {
+#gallery-section h2 {
     margin: 0;
     padding: 10px;
     text-align: center;
@@ -250,7 +268,7 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
 
 /*stylowanie sekcji z filmem*/
 
-.movie-section {
+#movie-section {
     position: relative;
     height: 550px;
     background-color: #66b8c4;
@@ -298,7 +316,7 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
 
 /*stylowanie formularza*/
 
-.contact-section {
+#contact-section {
     -webkit-box-shadow: 4px 4px 24px 1px rgba(224,9,134,0.75);
     -moz-box-shadow: 4px 4px 24px 1px rgba(224,9,134,0.75);
     box-shadow: 4px 4px 24px 1px rgba(224,9,134,0.75);
@@ -378,10 +396,10 @@ footer {
     nav ul li:hover > ul {
         display: none;
     }
-    .movie-section {
+    #movie-section {
         display: none;
     }
-    .contact-section {
+    #contact-section {
         display: none;
     }
 }
