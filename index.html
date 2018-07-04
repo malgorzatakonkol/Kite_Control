@@ -14,7 +14,7 @@
 <body>
 <header>
     <nav class="menu-section">
-        <h1 class="nav-logo">Kite Control</h1>
+        <h1 class="nav-logo"><a href="#">Kite Control</a></h1>
         <ul>
             <li><a href="#about-section">About Us</a></li>
             <li><a href="#gallery-section">Places</a>
@@ -37,10 +37,14 @@
         <h2>First, <span>think</span>. Second, <span>believe</span>. Third, <span>dream</span>.</h2>
         <h2>
             And finally,
-            <span class="benefits-keyword">
-            <span class="yellow-text">dare!</span>
-            <span class="yellow-textt">share!</span>
-            </span>
+            <div class="rw-words rw-words-1">
+            <span>dare!</span>
+            <span>do it!</span>
+            <span>risk!</span>
+            <span>have fun!</span>
+            <span>brave!</span>
+            <span>venture!</span>
+        </div>
         </h2>
     </div>
 </section>
@@ -58,7 +62,6 @@
     <article id="about-section">
         <div class="container">
             <h2>We &#9825 kitesurfing, and you?</h2>
-            <!--<img src="assets/kite.jpg" alt="kite">-->
             <p>Aenean quis nisi sed nisl efficitur gravida sit amet in mauris. Pellentesque dapibus elementum blandit.
                 Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed vel vehicula risus. Mauris quam nisl,
                 facilisis et vehicula volutpat, aliquet et augue. Ut rutrum tempus sem, quis maximus massa dictum a.
@@ -97,17 +100,30 @@
 
     </article>
 </section>
-<section id="gallery-section">
+    <section id="gallery-section">
     <div class="container">
         <h2 class="gallery-text">Gallery</h2>
         <figure class="gallery-image">
-            <img src="assets/rewa.jpg" alt="Photo 1">
-            <img src="assets/hawaii.jpg" alt="Photo 2">
-            <img src="assets/fiji.jpg" alt="Photo 3">
-            <img src="assets/capeTown.jpeg" alt="Photo 4">
+            <div>
+            <img src="assets/rewa.jpg" alt="Photo 1" id="rewaPhoto">
+                <div id="rewaText" class="changeText">Rewa</div>
+            </div>
+            <div>
+            <img src="assets/hawaii.jpg" alt="Photo 2" id="hawaiiPhoto">
+                <div id="hawaiiText" class="changeText">Hawaii</div>
+            </div>
+            <div>
+            <img src="assets/fiji.jpg" alt="Photo 3" id="fijiPhoto">
+                <div id="fijiText" class="changeText">Fiji</div>
+            </div>
+            <div>
+            <img src="assets/capeTown.jpeg" alt="Photo 4" id="capetownPhoto">
+                <div id="capetownText" class="changeText">Cape Town</div>
+            </div>
         </figure>
     </div>
 </section>
+
 <section id="movie-section">
     <div class="single-movie">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/jOSsb2GgcoU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -131,6 +147,7 @@
     </div>
 </section>
 
+<div class="parallax_section parallax_image_second">
 <section id="contact-section" class="container">
     <form action="php/form.php" method="post">
         <label for="name">Name</label>
@@ -144,6 +161,7 @@
     </form>
 
 </section>
+</div>
 <footer>
     <p>&#169 Website created by Gosia Konkol</p>
 

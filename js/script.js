@@ -33,7 +33,58 @@ $('.slick-slider').slick({
     ]
 });
 
-// galeria
+//galeria
+
+var rewaLi = document.getElementById('rewaText');
+
+document.getElementById('rewaPhoto').onmouseenter = function(){
+    console.log("toooo");
+    rewaLi.style.display = "inline";
+};
+
+document.getElementById('rewaPhoto').onmouseleave = function(){
+    console.log("toooo");
+    rewaLi.style.display = "none";
+};
+
+var hawaiiLi = document.getElementById('hawaiiText');
+
+document.getElementById('hawaiiPhoto').onmouseenter = function(){
+    console.log("toooo");
+    hawaiiLi.style.display = "inline";
+};
+
+document.getElementById('hawaiiPhoto').onmouseleave = function(){
+    console.log("toooo");
+    hawaiiLi.style.display = "none";
+};
+
+var fijiLi = document.getElementById('fijiText');
+
+document.getElementById('fijiPhoto').onmouseenter = function(){
+    console.log("toooo");
+    fijiLi.style.display = "inline";
+};
+
+document.getElementById('fijiPhoto').onmouseleave = function(){
+    console.log("toooo");
+    fijiLi.style.display = "none";
+};
+
+var capetowneLi = document.getElementById('capetownText');
+
+document.getElementById('capetownPhoto').onmouseenter = function(){
+    console.log("toooo");
+    capetowneLi.style.display = "inline";
+};
+
+document.getElementById('capetownPhoto').onmouseleave = function(){
+    console.log("toooo");
+    capetowneLi.style.display = "none";
+};
+
+
+// płynne przejście
 
 $(document).ready(function () {
 
@@ -48,5 +99,23 @@ $(document).ready(function () {
             }, 1000);
         }
     });
+//galeria
+
+
+    // var rewaPhoto = $(".firstPhoto");
+    // var rewaText = $(".firstText");
+    // console.log("pierwsze dziecko", rewaPhoto);
+    //
+    // rewaPhoto.on("click", function () {
+    //     console.log(this);
+    //     rewaText.style.display = "none";
+    //  console.log(rewaText);
+    // });
+
+
+    // rewaText.on("mouseover", function(){
+    //     this.style.display = "inline";
+    // })
+
 
 });
