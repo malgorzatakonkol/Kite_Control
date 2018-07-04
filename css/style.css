@@ -265,6 +265,10 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     font-size: 30px;
 }
 
+#about-section h2 span {
+    color: #e00986;
+}
+
 .gallery-team, .gallery-image {
     display: flex;
     flex-flow: row wrap;
