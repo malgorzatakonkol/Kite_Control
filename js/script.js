@@ -99,23 +99,5 @@ $(document).ready(function () {
             }, 1000);
         }
     });
-//galeria
-
-
-    // var rewaPhoto = $(".firstPhoto");
-    // var rewaText = $(".firstText");
-    // console.log("pierwsze dziecko", rewaPhoto);
-    //
-    // rewaPhoto.on("click", function () {
-    //     console.log(this);
-    //     rewaText.style.display = "none";
-    //  console.log(rewaText);
-    // });
-
-
-    // rewaText.on("mouseover", function(){
-    //     this.style.display = "inline";
-    // })
-
 
 });

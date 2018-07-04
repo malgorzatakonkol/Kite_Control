@@ -265,23 +265,25 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     font-size: 30px;
 }
 
+.gallery-team, .gallery-image {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
 .gallery-team img {
+    display: flex;
     width: 400px;
     height: 200px;
     object-fit: cover;
     margin: 0 auto;
     padding: 0;
-    display: inline-block;
-    background-color: #f29cd9;
 }
 
 .gallery-team div {
     width: 400px;
     height: 200px;
-    object-fit: cover;
-    margin: 0 auto;
-    padding: 0;
-    display: inline-block;
+    margin: 10px;
 }
 
 .overlay {
@@ -337,11 +339,11 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     font-size: 30px;
 }
 
-.gallery-image {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-}
+/*.gallery-image {*/
+    /*display: flex;*/
+    /*flex-flow: row wrap;*/
+    /*justify-content: center;*/
+/*}*/
 
 .gallery-image img {
     display: flex;
@@ -526,10 +528,6 @@ footer {
 
     .rw-words-1 span {
         font-size: 100%;
-    }
-
-    .gallery-team img {
-        margin-left: -57px;
     }
 
     #movie-section {
