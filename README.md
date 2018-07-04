@@ -1,4 +1,4 @@
-# Kite Controle
+# Kite Controle   <img alt="Logo" src="kite.jpg" width="30">
 
 ### Description:
 Kitesurfing school website.
