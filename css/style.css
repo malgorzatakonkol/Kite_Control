@@ -350,9 +350,9 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     object-fit: cover;
     margin: 10px 10px;
     border: 5px solid #fff;
-    -webkit-box-shadow: 4px 4px 24px 1px rgba(102, 184, 196, 0.75);
-    -moz-box-shadow: 4px 4px 24px 1px rgba(102, 184, 196, 0.75);
-    box-shadow: 4px 4px 24px 1px rgba(102, 184, 196, 0.75);
+    -webkit-box-shadow: 4px 4px 24px 1px rgba(224, 9, 134, 0.75);
+    -moz-box-shadow: 4px 4px 24px 1px rgba(224, 9, 134, 0.75);
+    box-shadow: 4px 4px 24px 1px rgba(224, 9, 134, 0.75);
 }
 
 .gallery-image img:hover {
@@ -432,9 +432,10 @@ form {
     transform: translateX(-50%) translateY(-50%);
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
-    -webkit-box-shadow: 4px 4px 24px 1px rgba(224, 9, 134, 0.75);
-    -moz-box-shadow: 4px 4px 24px 1px rgba(224, 9, 134, 0.75);
-    box-shadow: 4px 4px 24px 1px rgba(224, 9, 134, 0.75);
+    -webkit-box-shadow: 4px 4px 24px 1px rgba(102, 184, 196, 0.75);
+    -moz-box-shadow: 4px 4px 24px 1px rgba(102, 184, 196, 0.75);
+    box-shadow: 4px 4px 24px 1px rgba(102, 184, 196, 0.75);
+
     padding: 50px;
     color: white;
 }
@@ -468,9 +469,9 @@ input[type='submit'], [type='reset'] {
     max-width: 200px;
     height: 50px;
     font-size: 20px;
-    background: #f29cd9;
+    background: #66b8c4;
     display: inline-block;
-    border: 1px solid #e00986;
+    border: 1px solid #bcb2fe;
 }
 
 /*stylowanie footer*/
