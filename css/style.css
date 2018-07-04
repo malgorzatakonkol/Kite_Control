@@ -339,12 +339,6 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     font-size: 30px;
 }
 
-/*.gallery-image {*/
-    /*display: flex;*/
-    /*flex-flow: row wrap;*/
-    /*justify-content: center;*/
-/*}*/
-
 .gallery-image img {
     display: flex;
     width: 400px;
