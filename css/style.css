@@ -310,7 +310,7 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
 }
 
 .gallery-team img:hover {
-    opacity: 0.6;
+    transform: scale(1.15);
 }
 
 #about-section p {
@@ -350,13 +350,37 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     object-fit: cover;
     margin: 10px 10px;
     border: 5px solid #fff;
-    -webkit-box-shadow: 4px 4px 24px 1px rgba(224, 9, 134, 0.75);
-    -moz-box-shadow: 4px 4px 24px 1px rgba(224, 9, 134, 0.75);
-    box-shadow: 4px 4px 24px 1px rgba(224, 9, 134, 0.75);
+    border-radius: 10%;
 }
 
-.gallery-image img:hover {
-    transform: scale(1.15);
+#weatherImg {
+    display: none;
+}
+
+#weatherImgg {
+    width: 90px;
+    height: 50px;
+    margin-top: -265px;
+    margin-left: 110px;
+    background-size: cover;
+    border: 0 solid black;
+}
+
+.weather {
+    font-size: 2.5em;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+    color: #e00986;
+    text-shadow: 0 1px 0 rgba(0,0,0, 10);
+    text-align: center;
+    width: 300px;
+    height: 115px;
+
+    padding: 0;
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 52px;
+    line-height: 0.5;
 }
 
 .changeText {
