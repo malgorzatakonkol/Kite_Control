@@ -353,6 +353,10 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     border-radius: 10%;
 }
 
+.gallery-image span {
+    margin-left: 178px;
+}
+
 #weatherImg {
     display: none;
 }
