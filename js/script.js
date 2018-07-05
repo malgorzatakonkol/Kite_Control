@@ -1,3 +1,6 @@
+$(function () {
+
+
 $('.slick-slider').slick({
     dots:true,
     arrows:true,
@@ -33,66 +36,15 @@ $('.slick-slider').slick({
     ]
 });
 
-//galeria
 
-// var rewaLi = document.getElementById('rewaText');
-//
-// document.getElementById('rewaPhoto').onmouseenter = function(){
-//     console.log("toooo");
-//     rewaLi.style.display = "inline";
-// };
-//
-// document.getElementById('rewaPhoto').onmouseleave = function(){
-//     console.log("toooo");
-//     rewaLi.style.display = "none";
-// };
-//
-// var hawaiiLi = document.getElementById('hawaiiText');
-//
-// document.getElementById('hawaiiPhoto').onmouseenter = function(){
-//     console.log("toooo");
-//     hawaiiLi.style.display = "inline";
-// };
-//
-// document.getElementById('hawaiiPhoto').onmouseleave = function(){
-//     console.log("toooo");
-//     hawaiiLi.style.display = "none";
-// };
-//
-// var fijiLi = document.getElementById('fijiText');
-//
-// document.getElementById('fijiPhoto').onmouseenter = function(){
-//     console.log("toooo");
-//     fijiLi.style.display = "inline";
-// };
-//
-// document.getElementById('fijiPhoto').onmouseleave = function(){
-//     console.log("toooo");
-//     fijiLi.style.display = "none";
-// };
-//
-// var capetowneLi = document.getElementById('capetownText');
-//
-// document.getElementById('capetownPhoto').onmouseenter = function(){
-//     console.log("toooo");
-//     capetowneLi.style.display = "inline";
-// };
-//
-// document.getElementById('capetownPhoto').onmouseleave = function(){
-//     console.log("toooo");
-//     capetowneLi.style.display = "none";
-// };
-
-
-$(function () {
 
 var divWeather = $('.row div');
 var weatherUrl = "https://api.openweathermap.org/data/2.5/weather?id=";
-var apiKey = '&APPID=bf96a337b9028212ebff87de47bce404';
+var apiKey = '&APPID=0792ae5427c864ed05425224de36e150';
 
 
 
-    divWeather.on("mouseenter", function (e){
+    divWeather.on("mouseenter", function (){
         var dataWeatherId = $(this).data("id");
         var thisDiv = $(this);
         $.ajax({
@@ -118,18 +70,14 @@ var apiKey = '&APPID=bf96a337b9028212ebff87de47bce404';
             console.log(weatherIcon);
             thisDiv.find('img#weatherImg').attr('src', 'http://openweathermap.org/img/w/' + weatherIcon + '.png');
             thisDiv.find('img#weatherImg').attr('id', 'weatherImgg');
-            // weatherIcon.addClass('weatherIcon');
+
         }).fail(function(error) {
             console.log(error);
         });
     });
 
-
-});
-
 // płynne przejście
 
-$(document).ready(function () {
 
     $('a[href^="#"]').on('click', function (event) {
 
@@ -142,4 +90,5 @@ $(document).ready(function () {
             }, 2000);
         }
     });
+
 });
