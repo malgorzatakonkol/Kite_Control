@@ -108,8 +108,8 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     height: 0.2em;
     width: 25px;
     border-radius: 2px;
-    margin-bottom: 0.5em;
-    background-color: #000;
+    margin-bottom: 0.4em;
+    background-color:  #e00986;
     transition: 0.15s ease;
     margin-left: 90%;
 }
@@ -119,13 +119,13 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
 }
 
 .downsandwichstart {
-    transform: translateY(-14px) rotate(-45deg);
-    background-color: #FF3D2E;
+    transform: translateY(-11px) rotate(-45deg);
+    background-color:  #1e7eb7;
 }
 
 .topsandwichstart {
     transform: translateY(7px) rotate(45deg);
-    background-color: #FF3D2E;
+    background-color:  #1e7eb7;
 }
 
 
