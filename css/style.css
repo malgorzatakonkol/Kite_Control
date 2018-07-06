@@ -28,6 +28,7 @@ header {
     float: left;
     position: fixed;
     z-index: 3;
+
 }
 
 .nav-logo a {
@@ -91,6 +92,42 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     position: absolute;
     z-index: 1;
 }
+
+/*hamburger*/
+
+.mcburger {
+    z-index: 8;
+    top: 0;
+    cursor: pointer;
+    margin-top: 5em;
+    position: relative;
+
+}
+
+.burgline {
+    height: 0.2em;
+    width: 25px;
+    border-radius: 2px;
+    margin-bottom: 0.5em;
+    background-color: #000;
+    transition: 0.15s ease;
+    margin-left: 90%;
+}
+
+.hidden {
+    width: 0;
+}
+
+.downsandwichstart {
+    transform: translateY(-14px) rotate(-45deg);
+    background-color: #FF3D2E;
+}
+
+.topsandwichstart {
+    transform: translateY(7px) rotate(45deg);
+    background-color: #FF3D2E;
+}
+
 
 /*stylowanie hero-section*/
 
@@ -515,11 +552,11 @@ footer {
 
 @media (max-width: 767px) {
     header {
-        height: 270px;
+        height: 100px;
     }
 
     .nav-logo {
-        width: 100%;
+        width: 70%;
         float: none;
         padding: 0;
         text-align: center;
@@ -530,19 +567,21 @@ footer {
         float: left;
         font-size: 20px;
         line-height: 1;
-
     }
 
     nav ul {
-        padding-top: 30px;
+        padding-top: 0;
         float: none;
         background-image: radial-gradient(circle,
         #7ac5ff, #bcb2fe);
     }
 
     nav ul li {
-        display: block;
+        display: inline-block;
         margin: 0 auto;
+    }
+    nav ul li a {
+        line-height: 35px;
     }
 
     nav ul li:hover > ul {
