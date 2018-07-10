@@ -434,6 +434,9 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.elementToHide {
+    display: none;
+}
 /*stylowanie sekcji z filmem*/
 
 #movie-section {

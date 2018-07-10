@@ -76,6 +76,14 @@ var apiKey = '&APPID=0792ae5427c864ed05425224de36e150';
         });
     });
 
+    divWeather.on("mouseleave", function () {
+        console.log("dupa");
+        var thisDiv = $(this);
+        var elementHide = thisDiv.find(".weather");
+        console.log(elementHide);
+        elementHide.attr('class', 'elementToHide');
+    });
+
 // płynne przejście
 
 
