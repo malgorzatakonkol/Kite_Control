@@ -2,6 +2,7 @@
 
 ### Description:
 Kitesurfing school website.
+You can check the weather and wind speed at training points.
 Website is responsive with form served in php.
 I used Slick-Slider and parallax for layout.
 
@@ -13,4 +14,5 @@ https://malgorzatakonkol.github.io/Kite_Control/#/
 * CSS
 * JavaScript
 * jquery
+* AJAX (weather forecast API)
 * flexbox
