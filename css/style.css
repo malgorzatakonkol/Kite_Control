@@ -405,6 +405,7 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     margin-left: 110px;
     background-size: cover;
     border: 0 solid black;
+    line-height: 1em;
 }
 
 .weather {
@@ -421,7 +422,7 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     position: absolute;
     margin-top: -250px;
     margin-left: 52px;
-    line-height: 0.5;
+    line-height: 0.6em;
 }
 
 .changeText {
