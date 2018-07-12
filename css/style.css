@@ -394,6 +394,10 @@ nav ul li:hover > ul { /*odkrycie drugiego menu*/
     margin-left: 178px;
 }
 
+.gallery-image img:hover{
+    opacity: 0.3;
+}
+
 #weatherImg {
     display: none;
 }
