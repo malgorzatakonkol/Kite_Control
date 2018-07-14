@@ -43,45 +43,46 @@ var weatherUrl = "https://api.openweathermap.org/data/2.5/weather?id=";
 var apiKey = '&APPID=0792ae5427c864ed05425224de36e150';
 
 
+    function showWeather(response, thisDiv){
+        console.log(response);
+        var temp = response.main.temp;
+        temp = Math.round(temp-273);
+        console.log(temp);
+        thisDiv.find('p.temp').text(temp + " °C");
+
+        var desc = response.weather[0].description;
+        console.log(desc);
+        thisDiv.find('p.desc').text(desc);
+
+        var windSpeed = response.wind.speed;
+        console.log(windSpeed);
+        thisDiv.find('p.wind').text("wind " + windSpeed + " m/s");
+
+        var weatherIcon = response.weather[0].icon;
+        console.log(weatherIcon);
+        thisDiv.find('img#weatherImg').attr('src', 'http://openweathermap.org/img/w/' + weatherIcon + '.png');
+        thisDiv.find('img#weatherImg').attr('id', 'weatherImgg');
+    }
 
     divWeather.on("mouseenter", function (){
         var dataWeatherId = $(this).data("id");
         var thisDiv = $(this);
+        thisDiv.find(".elementToHide").attr("class", "weather"); //toggle
         $.ajax({
             url: weatherUrl + dataWeatherId + apiKey,
             method: "GET"
         }).done(function(response) {
-            console.log(response);
-            var temp = response.main.temp;
-            temp = Math.round(temp-273);
-            console.log(temp);
-            thisDiv.find('p.temp').text(temp + " °C");
-            // temp.addClass('info');
-
-            var desc = response.weather[0].description;
-            console.log(desc);
-            thisDiv.find('p.desc').text(desc);
-
-            var windSpeed = response.wind.speed;
-            console.log(windSpeed);
-            thisDiv.find('p.wind').text("wind " + windSpeed + " m/s");
-
-            var weatherIcon = response.weather[0].icon;
-            console.log(weatherIcon);
-            thisDiv.find('img#weatherImg').attr('src', 'http://openweathermap.org/img/w/' + weatherIcon + '.png');
-            thisDiv.find('img#weatherImg').attr('id', 'weatherImgg');
-
+                showWeather(response, thisDiv)
         }).fail(function(error) {
             console.log(error);
         });
     });
 
     divWeather.on("mouseleave", function () {
-        console.log("dupa");
         var thisDiv = $(this);
         var elementHide = thisDiv.find(".weather");
         console.log(elementHide);
-        elementHide.attr('class', 'elementToHide');
+        elementHide.attr('class', 'elementToHide'); //toggle
     });
 
 // płynne przejście
